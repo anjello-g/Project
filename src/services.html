@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">ShapeTech</span>
+                        <img class="h-10 w-auto" src="../images/shapetechlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+                    <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+                    <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900">Products and Services</a>
+                    <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900">Support</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-white">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="absolute inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">ShapeTech</span>
+                            <img class="h-10 w-auto" src="../images/shapetechlogo.png" alt="">
+                        </a>
+                        <button id="close-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="index.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                                <a href="about.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About
+                                    Us</a>
+                                <a href="services.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products
+                                    and Services</a>
+                                <a href="contact.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+    <!--Services-->
+    <div class="container p-16" style="margin-top: 5rem;">
+        <section class="dark:bg-gray-800 dark:text-gray-100">
+            <div class="container flex flex-col mx-auto lg:flex-row">
+                <div class="w-full lg:w-1/2" style="background-image: url('../images/test.jpg'); background-position: center center; background-size: cover;"></div>
+                <div class="flex flex-col w-full p-6 lg:w-1/2 md:p-8 lg:p-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8 mb-8 text-green-400">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <h2 class="text-3xl font-semibold leadi">Modern solutions to all kinds of problems</h2>
+                    <p class="mt-4 mb-8 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum rem amet!</p>
+                    <button class="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-green-400 dark:text-gray-900">Get started</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <h1 class="mb-12 text-center font-sans text-5xl font-bold">Recent Posts</h1>
+            <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-4 lg:gap-5">
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660241588741-d653d53348fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Nature</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">A Visit to Mount Abignale</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660213372424-deecb106a28e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Gardening</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Sunflowers are my favorite</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Coding</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Getting to know the Ice Factory Pattern</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+                <a href="#" class="block h-full w-full">
+                  <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                  <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Coding</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Getting to know the Ice Factory Pattern</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                      <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+            </div>
+          </section>
+          
+    </div> 
+
+    <!--footer-->
+    <footer class="bg-gray-100">
+        <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-md">
+                <strong class="block text-center text-xl font-bold text-gray-900 sm:text-3xl">
+                    Be the first to know about new content and special offers.
+                </strong>
+
+                <form class="mt-6">
+                    <div class="relative max-w-lg">
+                        <label class="sr-only" for="email"> Email </label>
+
+                        <input class="w-full rounded-full border-gray-200 bg-white p-4 pe-32 text-sm font-medium"
+                            id="email" type="email" placeholder="your@email.com" />
+
+                        <button
+                            class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-green-400 px-5 py-3 text-sm font-medium text-white transition hover:bg-gray-900">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+                <div class="mx-auto max-w-sm lg:max-w-none">
+                    <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium natus quod eveniet
+                        aut perferendis distinctio iusto repudiandae, provident velit earum?
+                    </p>
+
+                    <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+                        <a class="text-gray-700 transition hover:text-gray-700/75"
+                            href="https://www.facebook.com/shptechsolutions" target="_blank" rel="noreferrer">
+                            <span class="sr-only"> Facebook </span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <a class="text-gray-700 transition hover:text-gray-700/75" href="" target="_blank"
+                            rel="noreferrer">
+                            <span class="sr-only"> Instagram </span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <a class="text-gray-700 transition hover:text-gray-700/75" href="" target="_blank"
+                            rel="noreferrer">
+                            <span class="sr-only"> X </span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+
+
+                        </a>
+
+                        <a class="text-gray-700 transition hover:text-gray-700/75"
+                            href="mailto: shapetechsolutions@gmail.com" rel="noreferrer">
+                            <span class="sr-only"> Email </span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+                    <div>
+                        <strong class="font-medium text-gray-900"> Products and Services </strong>
+
+                        <ul class="mt-6 space-y-1">
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/"> Digital Solutions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                    Hardware Solutions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                    Hardware Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                    Training and Education
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong class="font-medium text-gray-900"> About </strong>
+
+                        <ul class="mt-6 space-y-1">
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#about"> About </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#about"> Company Background
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#history"> History </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#team"> Our Team </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong class="font-medium text-gray-900"> Support </strong>
+
+                        <ul class="mt-6 space-y-1">
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="contact.html#faqs"> FAQs </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="contact.html#contact">
+                                    Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 border-t border-gray-100 pt-8">
+                <p class="text-center text-xs/relaxed text-gray-500">
+                    © ShapeTech 2024. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    document.getElementById('close-menu-button').addEventListener('click', function () {
+        closeMobileMenu();
+    });
+
+    function closeMobileMenu() {
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.add('hidden');
+    }
+</script>
+
+</html>

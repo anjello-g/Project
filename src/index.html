@@ -9,6 +9,179 @@
     <script>document.documentElement.classList.add('js')</script>
 </head>
 
+<style>
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	margin-top: 100px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid black;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: black;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #000;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+</style>
+
 <body>
 
     <div class="bg-white">
@@ -34,7 +207,7 @@
                 <div class="hidden lg:flex lg:gap-x-12">
                     <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
                     <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Products and Services</a>
+                    <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900">Products and Services</a>
                     <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900">Support</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -68,7 +241,7 @@
                                 <a href="about.html"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About
                                     Us</a>
-                                <a href="#"
+                                <a href="services.html"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products
                                     and Services</a>
                                 <a href="contact.html"
@@ -82,7 +255,7 @@
 
         <!--bg blur-->
 
-        <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="relative isolate px-6 pt-0 lg:px-8">
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                 aria-hidden="true">
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80C49C] to-[#202020] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -91,7 +264,7 @@
             </div>
 
             <!--Hero Content-->
-            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="mx-auto max-w-2xl py-32 ">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-left">
                 </div>
                 <div class="text-center">
@@ -106,8 +279,25 @@
                         <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
                                 aria-hidden="true">→</span></a>
                     </div>
+                     <!--mouse-->
+            <div class="mouse_scroll">
+
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
                 </div>
             </div>
+                </div>
+            </div>
+
+           
+
+
+
             <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
                 aria-hidden="true">
                 <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#80C49C] to-[#202020] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
@@ -118,13 +308,13 @@
     </div>
 
     <!--Partnerships-->
-    <div class="bg-white py-24 sm:py-32">
+    <div class="bg-white pb-8">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-2xl font-bold mb-5 text-gray-800 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="50">Join on Our Growing Ecosystem
+            <h2 class="text-3xl md:text-2xl font-bold mb-5 text-gray-800 delay-[300ms] duration-[600ms] taos:translate-y-[80px] taos:opacity-0" data-taos-offset="50">Join on Our Growing Ecosystem
             </h2>
-            <h3 class="text-l mb-5 font-light delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 class="text-l mb-5 font-light delay-[300ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0" data-taos-offset="50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <div
-                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="60">
+                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 delay-[300ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0" data-taos-offset="60">
                 <img class="col-span-2 max-h-10 w-full object-contain lg:col-span-1" src="../images/integr8.png"
                     alt="Integr8" width="158" height="48">
                 <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1" src="../images/dorado.png"
@@ -300,7 +490,7 @@
     <section class="bg-white dark:bg-gray-900" id="contact">
         <div class="container px-6 py-12  max-w-7xl mx-auto">
             <div class="text-center">
-                <h1 class="text-3xl md:text-2xl font-bold mb-5 text-gray-800 dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[150px] taos:opacity-0" data-taos-offset="50">Get in Touch</h1>
+                <h1 class="text-3xl md:text-2xl font-bold mb-5 text-gray-800 dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0" data-taos-offset="50">Get in Touch</h1>
 
                 <p class="mt-3 text-gray-500 dark:text-gray-400 delay-[300ms] duration-[600ms] taos:translate-y-[100px] taos:opacity-0" data-taos-offset="50">Our friendly team would love to hear from you.</p>
             </div>
@@ -479,20 +669,20 @@
 
                         <ul class="mt-6 space-y-1">
                             <li>
-                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/"> About </a>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#about"> About </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/"> Company Background
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#about"> Company Background
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/"> History </a>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#history"> History </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-700 transition hover:text-gray-700/75" href="/"> Our Team </a>
+                                <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html#team"> Our Team </a>
                             </li>
                         </ul>
                     </div>

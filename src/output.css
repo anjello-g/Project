@@ -594,14 +594,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   border-width: 0;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -632,20 +624,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   bottom: -5rem;
 }
 
-.-bottom-7 {
-  bottom: -1.75rem;
-}
-
 .-left-2 {
   left: -0.5rem;
 }
 
 .-right-2 {
   right: -0.5rem;
-}
-
-.-right-7 {
-  right: -1.75rem;
 }
 
 .-top-40 {
@@ -684,36 +668,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   top: calc(100% - 13rem);
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.end-0 {
-  inset-inline-end: 0px;
-}
-
-.start-0 {
-  inset-inline-start: 0px;
-}
-
 .isolate {
   isolation: isolate;
 }
 
 .-z-10 {
   z-index: -10;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -724,20 +684,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   z-index: 50;
 }
 
-.z-\[-1\] {
-  z-index: -1;
-}
-
-.z-30 {
-  z-index: 30;
+.col-span-12 {
+  grid-column: span 12 / span 12;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
-.col-span-12 {
-  grid-column: span 12 / span 12;
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .col-start-2 {
@@ -764,8 +720,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin: 2rem;
 }
 
-.m-4 {
-  margin: 1rem;
+.m-auto {
+  margin: auto;
 }
 
 .-mx-3 {
@@ -783,23 +739,22 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-bottom: -1.5rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-20 {
@@ -862,12 +817,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 2rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .block {
@@ -906,6 +873,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 2.5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -922,40 +893,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-96 {
   height: 24rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-60 {
-  height: 15rem;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .max-h-10 {
@@ -970,12 +925,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   max-height: 4rem;
 }
 
+.max-h-40 {
+  max-height: 10rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-1\/6 {
   width: 16.666667%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-32 {
@@ -988,6 +955,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[36\.125rem\] {
@@ -1007,24 +978,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   width: max-content;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-4 {
-  width: 1rem;
+.w-\[70px\] {
+  width: 70px;
 }
 
 .max-w-2xl {
@@ -1033,6 +988,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-7xl {
@@ -1045,6 +1004,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .max-w-\[520px\] {
   max-width: 520px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .max-w-lg {
@@ -1067,8 +1030,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   max-width: 36rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-\[510px\] {
+  max-width: 510px;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 
 .flex-shrink-0 {
@@ -1090,8 +1057,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[200px\] {
-  --tw-translate-y: 200px;
+.translate-x-\[-200px\] {
+  --tw-translate-x: -200px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1100,23 +1067,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-\[-200px\] {
-  --tw-translate-x: -200px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-200px\] {
-  --tw-translate-y: -200px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[300px\] {
-  --tw-translate-y: 300px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[150px\] {
-  --tw-translate-y: 150px;
+.translate-y-\[80px\] {
+  --tw-translate-y: 80px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1152,6 +1104,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1166,10 +1122,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
 }
 
 .items-center {
@@ -1194,6 +1146,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-1 {
@@ -1221,16 +1177,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1245,12 +1201,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1259,6 +1209,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .divide-gray-500\/10 > :not([hidden]) ~ :not([hidden]) {
   border-color: rgb(107 114 128 / 0.1);
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-center {
@@ -1273,16 +1227,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   overflow-y: auto;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -1295,6 +1245,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .border {
@@ -1324,6 +1286,26 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
@@ -1334,32 +1316,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800 {
+.bg-blue-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-white\/40 {
-  background-color: rgb(255 255 255 / 0.4);
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
@@ -1402,6 +1361,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding: 0.375rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1426,8 +1389,17 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding: 2rem;
 }
 
-.p-16 {
-  padding: 4rem;
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-3 {
@@ -1470,11 +1442,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding-bottom: 0.625rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1488,6 +1455,21 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-12 {
@@ -1504,6 +1486,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .pl-\[62px\] {
   padding-left: 62px;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .pt-10 {
@@ -1526,12 +1512,20 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding-top: 2rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1579,6 +1573,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   line-height: 1.625;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1619,6 +1618,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   line-height: 1.625;
 }
 
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1631,6 +1634,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1668,19 +1676,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-100 {
+.text-green-400 {
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
+.text-indigo-500 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1726,18 +1729,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-blur-xl {
-  --tw-backdrop-blur: blur(24px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1752,16 +1743,22 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .\!delay-\[0ms\] {
   transition-delay: 0ms !important;
 }
 
-.delay-\[300ms\] {
-  transition-delay: 300ms;
-}
-
 .delay-\[100ms\] {
   transition-delay: 100ms;
+}
+
+.delay-\[300ms\] {
+  transition-delay: 300ms;
 }
 
 .\!duration-\[0ms\] {
@@ -1772,24 +1769,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 600ms;
 }
 
-.duration-\[300ms\] {
-  transition-duration: 300ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.\[backface-visibility\:hidden\] {
-  backface-visibility: hidden;
-}
-
-.\[transform\:perspective\(2500px\)_rotateX\(-100deg\)\] {
-  transform: perspective(2500px) rotateX(-100deg);
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .before\:mx-auto::before {
@@ -1829,16 +1810,15 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.before\:bg-violet-400::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
-}
-
 .before\:bg-green-400::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.hover\:translate-y-2:hover {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
@@ -1871,13 +1851,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover {
-  text-decoration-line: underline;
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus-visible\:outline:focus-visible {
@@ -1894,26 +1871,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .focus-visible\:outline-gray-800:focus-visible {
   outline-color: #1f2937;
-}
-
-.group:hover .group-hover\:bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.group:focus .group-focus\:outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.group:focus .group-focus\:ring-4 {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.group:focus .group-focus\:ring-white {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1957,11 +1914,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     grid-column-start: auto;
   }
 
-  .sm\:-mx-4 {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-
   .sm\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -1970,32 +1922,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     display: flex;
   }
 
-  .sm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .sm\:h-6 {
-    height: 1.5rem;
-  }
-
-  .sm\:h-64 {
-    height: 16rem;
-  }
-
   .sm\:w-\[72\.1875rem\] {
     width: 72.1875rem;
   }
 
-  .sm\:w-10 {
-    width: 2.5rem;
-  }
-
-  .sm\:w-6 {
-    width: 1.5rem;
-  }
-
   .sm\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .sm\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-2 {
@@ -2004,10 +1940,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .sm\:gap-x-10 {
@@ -2021,37 +1953,17 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:p-8 {
-    padding: 2rem;
-  }
-
   .sm\:p-10 {
     padding: 2.5rem;
   }
 
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .sm\:p-8 {
+    padding: 2rem;
   }
 
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .sm\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .sm\:py-48 {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
 
   .sm\:text-left {
@@ -2071,6 +1983,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .sm\:text-\[40px\]\/\[48px\] {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:ring-1 {
@@ -2158,10 +2075,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     margin-right: 2rem;
   }
 
-  .md\:h-96 {
-    height: 24rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2170,12 +2083,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     flex: 1 1 0%;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-20 {
@@ -2188,9 +2113,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     padding-bottom: 5rem;
   }
 
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 }
 
@@ -2240,6 +2174,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     width: 50%;
   }
 
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .lg\:w-6\/12 {
     width: 50%;
   }
@@ -2268,6 +2210,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -2280,9 +2226,21 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     gap: 8rem;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .lg\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-6 {
@@ -2293,11 +2251,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:py-56 {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
   }
 
   .lg\:pb-\[90px\] {
@@ -2319,14 +2272,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 
 @media (min-width: 1280px) {
-  .xl\:h-80 {
-    height: 20rem;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
-  }
-
   .xl\:w-5\/12 {
     width: 41.666667%;
   }
@@ -2335,21 +2280,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
 
-@media (min-width: 1536px) {
-  .\32xl\:h-96 {
-    height: 24rem;
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
-}
-
-.rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2363,12 +2298,13 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
-  .dark\:bg-white\/5 {
-    background-color: rgb(255 255 255 / 0.05);
+  .dark\:bg-violet-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(167 139 250 / var(--tw-bg-opacity));
   }
 
-  .dark\:bg-gray-800\/30 {
-    background-color: rgb(31 41 55 / 0.3);
+  .dark\:bg-white\/5 {
+    background-color: rgb(255 255 255 / 0.05);
   }
 
   .dark\:text-blue-400 {
@@ -2376,9 +2312,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     color: rgb(96 165 250 / var(--tw-text-opacity));
   }
 
+  .dark\:text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
+  }
+
   .dark\:text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-gray-900 {
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-violet-400 {
+    --tw-text-opacity: 1;
+    color: rgb(167 139 250 / var(--tw-text-opacity));
   }
 
   .dark\:text-white {
@@ -2386,22 +2337,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
-  .dark\:text-gray-800 {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55 / var(--tw-text-opacity));
-  }
-
   .dark\:shadow-\[0px_20px_95px_0px_rgba\(0\2c 0\2c 0\2c 0\.30\)\] {
     --tw-shadow: 0px 20px 95px 0px rgba(0,0,0,0.30);
     --tw-shadow-colored: 0px 20px 95px 0px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .group:hover .dark\:group-hover\:bg-gray-800\/60 {
-    background-color: rgb(31 41 55 / 0.6);
-  }
-
-  .group:focus .dark\:group-focus\:ring-gray-800\/70 {
-    --tw-ring-color: rgb(31 41 55 / 0.7);
   }
 }
