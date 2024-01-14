@@ -10,6 +10,10 @@
 </head>
 
 <style>
+    .no-scroll {
+    overflow: hidden;
+}
+
 
 .mouse_scroll {
 	display: block;
@@ -183,6 +187,7 @@
 </style>
 
 <body>
+    
 
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50">
@@ -344,7 +349,7 @@
             </div>
 
             <!-- Testimonial Slider -->
-            <div class="relative px-4 py-12 mb-20 text-center bg-white rounded shadow md:px-20 md:py-20 "
+            <div class="relative px-4 py-12 mb-20 text-center bg-white rounded-xl shadow md:px-20 md:py-20 "
                 id="testimonial-slider">
                 <!-- Slider Controls -->
                 <div class="flex gap-x-1">
@@ -715,14 +720,28 @@
         </div>
     </footer>
 
+    <button id="backToTopBtn" class="hidden fixed bottom-4 right-4 p-3 bg-green-400 text-white                                                                                                                                        rounded-md shadow-md hover:bg-gray-800 transition">
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    
+
 
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 </body>
-
+<!--menu script-->
 <script>
     document.getElementById('mobile-menu-button').addEventListener('click', function () {
         var mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.toggle('hidden');
+
+        // Disable scrolling when the mobile menu is open
+        if (mobileMenu.classList.contains('hidden')) {
+            enableScroll();
+        } else {
+            disableScroll();
+        }
     });
 
     document.getElementById('close-menu-button').addEventListener('click', function () {
@@ -732,9 +751,23 @@
     function closeMobileMenu() {
         var mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.add('hidden');
+
+        // Enable scrolling when the mobile menu is closed
+        enableScroll();
+    }
+
+    function disableScroll() {
+        // Add a class to the body to disable scrolling
+        document.body.classList.add('no-scroll');
+    }
+
+    function enableScroll() {
+        // Remove the class to enable scrolling
+        document.body.classList.remove('no-scroll');
     }
 </script>
 
+<!--testimonial script-->
 <script>
     let currentSlide = 0;
     const testimonials = document.querySelectorAll('.testimonial');
@@ -762,5 +795,26 @@
     // Show the initial slide
     showSlide(currentSlide);
 </script>
+
+<!--back to top script-->
+<script>
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+</script>
+
 
 </html>
